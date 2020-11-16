@@ -1,0 +1,16 @@
+<div class="listItemComponent">
+  <div class="contactTitle" (click)="onContactClick()">
+    <h3 style="margin:0px;">{{title}} {{name}}</h3>
+  </div>
+  <hr/>
+  <div id="contact_{{id}}_content" style="display:none;">
+    <h3>Nombre: {{name}}</h3>
+    <h3>Correo: {{email}}</h3>
+    <h3>Telefono: {{phone}}</h3>
+    <h3>Titulo: {{title}}</h3>
+    <div style="padding:5px;">
+      <button class="greenButton" (click)="deleteContact()">Eliminar</button>
+      <button class="redButton" (click)="cancelContactDetail()">Cancelar</button>
+    </div>
+  </div>
+</div>

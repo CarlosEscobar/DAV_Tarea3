@@ -1,0 +1,19 @@
+<div class="filterContainer">
+
+  <div class="containerTitle">Filtros</div>
+
+  <div class="filterDiv">
+    <h3 class="filterTitle">Nombre</h3>
+    <input type="text" (change)="onNameChange($event.target.value);" />
+  </div>
+
+  <div class="filterDiv">
+    <h3 class="filterTitle">Telefono</h3>
+    <input type="text" (change)="onPhoneChange($event.target.value);" />
+  </div>
+
+  <div class="filterDiv">
+    <h3 class="filterTitle">Correo</h3>
+    <input type="text" (change)="onEmailChange($event.target.value);" />
+  </div>
+</div>

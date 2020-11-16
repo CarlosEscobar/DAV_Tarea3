@@ -1,0 +1,39 @@
+.listItemComponent{
+  border: #264B96 3px solid;
+  border-radius: 5px;
+  margin: 5px;
+  width: 300px;
+  background-color: #FFFFFF;
+}
+
+.listItemComponent:hover{
+  background-color: #D0D0D0;
+}
+
+.contactTitle{
+  padding: 10px;
+}
+
+.greenButton{
+  padding: 5px;
+  margin: 5px;
+  background-color: #006F3C;
+  color: #FFFFFF;
+  border-color: #006F3C;
+}
+
+.greenButton:hover{
+  background-color: #66A88A;
+}
+
+.redButton{
+  padding: 5px;
+  margin: 5px;
+  background-color: #BF212F;
+  color: #FFFFFF;
+  border-color: #BF212F;
+}
+
+.redButton:hover{
+  background-color: #D87982;
+}

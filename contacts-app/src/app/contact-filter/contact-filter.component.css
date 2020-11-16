@@ -1,0 +1,25 @@
+.filterContainer{
+  border: #264B96 3px solid;
+  border-radius: 5px;
+  margin: 5px;
+  width: 300px;
+  background-color: #FFFFFF;
+}
+
+.containerTitle{
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  background-color: #264B96;
+  margin: 10px -1px 10px 0px;
+  padding-left: 115px;
+}
+
+.filterDiv{
+  display: inline-flex;
+  margin: 10px;
+}
+
+.filterTitle{
+  margin: 3px;
+}

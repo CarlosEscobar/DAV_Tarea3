@@ -1,0 +1,12 @@
+<h1>Lista de Contactos</h1>
+
+<app-contact-filter (nameChanged)="filterContactsByName($event);"
+                    (phoneChanged)="filterContactsByPhone($event);"
+                    (emailChanged)="filterContactsByEmail($event);">
+</app-contact-filter>
+
+<br/>
+
+<app-list-contacts [contacts] = filteredContacts
+                   (sendDelete)="receiveDelete($event)">
+</app-list-contacts>

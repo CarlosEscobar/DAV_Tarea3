@@ -5,16 +5,20 @@ import { AppComponent } from './app.component';
 import { ListContactsComponent } from './list-contacts/list-contacts.component';
 import { ListItemContactComponent } from './list-item-contact/list-item-contact.component';
 import { ContactFilterComponent } from './contact-filter/contact-filter.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListContactsComponent,
     ListItemContactComponent,
-    ContactFilterComponent
+    ContactFilterComponent,
+    ContactFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -26,6 +26,16 @@ export class ListItemContactComponent implements OnInit {
     this.sendDelete.emit(this.id);
   }
 
+  openEditModal(){
+    this.sendEdit.emit({
+      "id":this.id,
+      "name":this.name,
+      "email":this.email,
+      "phone":this.phone,
+      "title":this.title
+    });
+  }
+
   @Input() id: number;
   @Input() name: string;
   @Input() email: string;
@@ -33,4 +43,5 @@ export class ListItemContactComponent implements OnInit {
   @Input() title: string;
 
   @Output() sendDelete = new EventEmitter<number>();
+  @Output() sendEdit = new EventEmitter<any>();
 }

@@ -8,5 +8,24 @@
 <br/>
 
 <app-list-contacts [contacts] = filteredContacts
+                   (sendAddContact)="receiveAddContact()"
+                   (sendEdit)="receiveEdit($event)"
                    (sendDelete)="receiveDelete($event)">
 </app-list-contacts>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>{{modalType}} Contacto</h2>
+    </div>
+    <div class="modal-body">
+      <app-contact-form [_id]="appId"
+                        [_name]="appName"
+                        [_email]="appEmail"
+                        [_phone]="appPhone"
+                        [_title]="appTitle"
+                        (sendFormData)="receiveFormData($event);"></app-contact-form>
+    </div>
+  </div>
+</div>

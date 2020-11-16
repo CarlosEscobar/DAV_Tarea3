@@ -37,3 +37,27 @@
 .redButton:hover{
   background-color: #D87982;
 }
+
+.blueButton{
+  padding: 5px;
+  margin: 5px;
+  background-color: #264B96;
+  color: #FFFFFF;
+  border-color: #264B96;
+}
+
+.blueButton:hover{
+  background-color: #688acf;
+}
+
+.greyButton{
+  padding: 5px;
+  margin: 5px 5px 5px 120px;
+  background-color: #525252;
+  color: #FFFFFF;
+  border-color: #525252;
+}
+
+.greyButton:hover{
+  background-color: #A0A0A0;
+}
